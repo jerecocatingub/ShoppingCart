@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.midterm.jereco.shoppingcart.MainActivity">
+
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemList"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/tvTotal"
+        android:longClickable="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtFinalTotal"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:layout_below="@+id/ItemList"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/tvTotal"
+        android:text="Php 0.00" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="TOTAL: "
+        android:id="@+id/tvTotal"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="35dp"
+        android:layout_above="@+id/btnAdd"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAdd"
+        android:background="@android:color/transparent"
+        android:src="@drawable/add"
+        android:layout_marginBottom="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/txtFinalTotal"
+        android:layout_toStartOf="@+id/txtFinalTotal" />
+
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnEmail"
+        android:background="@android:color/transparent"
+        android:src="@drawable/email"
+        android:layout_alignTop="@+id/btnAdd"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnText"
+        android:background="@android:color/transparent"
+        android:src="@drawable/text"
+        android:layout_alignTop="@+id/btnEmail"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/txtEmpty"
+        android:textSize="30sp"
+        android:textColor="#a6a6a6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="EMPTY" />
+
+</RelativeLayout>
